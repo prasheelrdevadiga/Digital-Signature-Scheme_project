@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simulate MITM Attack</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <h2>Simulate MITM Attack</h2>
+    <form method="POST">
+        <label>Tampered Message:</label><br>
+        <textarea name="tampered_message" rows="6" required></textarea><br>
+        <label>Sender's Public Key:</label><br>
+        <textarea readonly rows="8">{{ public_key }}</textarea><br>
+        <button type="submit">Submit for Verification</button>
+    </form>
+</div>
+</body>
+</html>

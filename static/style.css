@@ -1,0 +1,129 @@
+/* ===== Index Page Background & Typography ===== */
+body {
+    background: linear-gradient(135deg, #e0f7fa, #e1bee7);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Centered, modern box for index */
+.index-container {
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    padding: 35px 40px;
+    border-radius: 15px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.index-container h1 {
+    color: #4a148c;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    color: #555;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+/* Form styling */
+.form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+select, textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fafafa;
+    transition: border-color 0.3s ease;
+}
+
+select:focus, textarea:focus {
+    border-color: #7b1fa2;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #7b1fa2;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4a148c;
+}
+.verification-status {
+    margin-bottom: 30px;
+    padding: 25px;
+    border-radius: 12px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.verification-status.success {
+    background-color: #e8f5e9;
+    color: #1b5e20;
+    border: 2px solid #66bb6a;
+}
+
+.verification-status.error {
+    background-color: #ffebee;
+    color: #b71c1c;
+    border: 2px solid #ef5350;
+}
+
+.verification-status h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.verification-status p {
+    font-size: 16px;
+}
+.verification-status.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 2px solid #c3e6cb;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.verification-status.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 2px solid #f5c6cb;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}

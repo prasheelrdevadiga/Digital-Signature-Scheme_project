@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Verify Message</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <h2>Verify Signature</h2>
+    <form method="POST">
+        <label>Message:</label>
+        <textarea readonly rows="6">{{ message }}</textarea>
+        <label>Public Key:</label>
+        <textarea readonly rows="8">{{ public_key }}</textarea>
+        <button type="submit">Verify Signature</button>
+    </form>
+</div>
+</body>
+</html>

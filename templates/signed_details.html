@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signed Message</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <h2>Signed Message Details</h2>
+    <p><strong>Sender:</strong> {{ sender }}</p>
+    <p><strong>Recipient:</strong> {{ recipient }}</p>
+    <p><strong>Message:</strong><br>{{ message }}</p>
+    <p><strong>Signature:</strong><br><code>{{ signature }}</code></p>
+    <p><strong>Public Key:</strong><br><pre>{{ public_key }}</pre></p>
+    <p><strong>X.509 Certificate:</strong><br><pre>{{ certificate }}</pre></p>
+    <a href="/verify"><button>Verify Message</button></a>
+    <a href="/mitm"><button style="background-color: darkred;">Simulate MITM Attack</button></a>
+</div>
+</body>
+</html>

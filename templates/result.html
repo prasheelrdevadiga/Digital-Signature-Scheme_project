@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Verification Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <h2>Verification Result</h2>
+
+    <!-- ✅ Enhanced Result Message Box -->
+    <!-- Big display status box -->
+<div class="verification-status {{ 'success' if '✅' in result else 'error' }}">
+    {% if '✅' in result %}
+        <h2>✅ {{ result }}</h2>
+    {% else %}
+        <h2>❌ {{ result }}</h2>
+    {% endif %}
+</div>
+
+
+    <p><strong>Original Message:</strong><br>{{ original_message }}</p>
+    <p><strong>Original Signature:</strong><br><code>{{ original_signature }}</code></p>
+    <p><strong>Verified Message Used:</strong><br>{{ used_message }}</p>
+    <p><strong>Signature Used:</strong><br><code>{{ used_signature }}</code></p>
+    <p><strong>Public Key:</strong><br><pre>{{ public_key }}</pre></p>
+    <p><strong>X.509 Certificate:</strong><br><pre>{{ certificate }}</pre></p>
+
+    <a href="/"><button>Back to Home</button></a>
+</div>
+</body>
+</html>
